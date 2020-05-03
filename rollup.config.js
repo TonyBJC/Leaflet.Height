@@ -1,4 +1,4 @@
-import commonjs  from 'rollup-plugin-commonjs'
+import commonjs from 'rollup-plugin-commonjs'
 import nodeResolve from 'rollup-plugin-node-resolve'
 import {terser} from 'rollup-plugin-terser'
 import babel from 'rollup-plugin-babel'
@@ -25,16 +25,22 @@ export default {
         }),
         commonjs({
             namedExports: {
-                "d3-selection": ["select", "selectAll", "mouse"],
+                "d3-selection": ["select", "selectAll", "mouse","event","touch","customEvent"],
                 "d3-scale-chromatic": [
                     "schemeAccent", "schemeDark2", "schemeSet2", "schemeCategory10", "schemeSet3", "schemePaired"
                 ],
                 "d3-scale": ["scaleOrdinal", "scaleLinear"],
-                "d3-array": ["quantile", "min", "max", "bisector"],
+                "d3-array": ["quantile", "min", "max", "bisector", "range", "bisect", "tickStep", "ticks", "tickIncrement", "ascending"],
                 "d3-shape": ["curveBasis", "curveLinear", "line", "area", "symbol", "symbolTriangle"],
-                "d3-format": ["format"],
+                "d3-format": ["format", "formatSpecifier", "precisionPrefix", "formatPrefix", "precisionRound", "precisionFixed"],
                 "d3-drag": ["drag"],
-                "d3-axis": ["axisLeft", "axisBottom", "axisRight"]
+                "d3-path": ["path"],
+                "d3-color": ["cubehelix","rgb"],
+                "d3-dispatch": ["dispatch","touch"],
+                "d3-time": ["timeYear", "timeMonth", "timeWeek", "timeDay", "timeHour", "timeMinute", "timeSecond", "timeMillisecond", "utcYear", "utcMonth", "utcWeek", "utcDay", "utcHour", "utcMinute", "utcSecond","utcMillisecond"],
+                "d3-time-format": ["timeFormat","utcFormat"],
+                "d3-axis": ["axisLeft", "axisBottom", "axisRight"],
+                "d3-interpolate": ["interpolate", "interpolateNumber", "interpolateRound","piecewise","interpolateRgbBasis","interpolateCubehelixLong"]
             }
         }),
         babel({
@@ -46,7 +52,7 @@ export default {
         }),
         copy({
             targets: [
-                { src: 'src/img/**/*', dest: 'dist/img'}
+                {src: 'src/img/**/*', dest: 'dist/img'}
             ]
 
         })

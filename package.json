@@ -1,6 +1,6 @@
 {
-  "name": "leaflet.heightgraph",
-  "version": "0.4.1",
+  "name": "leaflet.height",
+  "version": "0.0.1",
   "description": "Leaflet plugin to visualize height information and road attributes",
   "main": "dist/L.Control.Heightgraph.min.js",
   "repository": {
@@ -15,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "@babel/polyfill": "^7.7.0",
-    "d3": "^5.12.0",
+    "d3": "^5.16.0",
     "leaflet": "^1.5.1"
   },
   "devDependencies": {
