@@ -43,7 +43,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'dist/L.Control.Heightgraph.js': 'src/L.Control.Heightgraph.js'
+                    'dist/L.Control.Height.js': 'src/L.Control.Height.js'
                 }
             }
         }

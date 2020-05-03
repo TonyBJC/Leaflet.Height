@@ -2,8 +2,8 @@ import {select, selectAll, mouse} from '../node_modules/d3-selection/src/index.j
 import {scaleOrdinal,scaleLinear} from '../node_modules/d3-scale/src/index.js'
 import {quantile as d3Quantile, min as d3Min, max as d3Max, bisector} from '../node_modules/d3-array/src/index.js'
 import {drag} from '../node_modules/d3-drag/src/index.js'
-import {axisLeft, axisBottom, axisRight} from '../node_modules/d3-axis/src/index.js'
-import {format} from '../node_modules/d3-format/src/index.js'
+import {axisLeft, axisBottom, axisRight} from 'd3-axis'
+import {format} from 'd3-format'
 import {curveBasis, curveLinear, line, area as d3Area, symbol, symbolTriangle} from '../node_modules/d3-shape/src/index.js'
 import {
     schemeAccent,

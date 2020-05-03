@@ -6,14 +6,14 @@ import css from 'rollup-plugin-css-porter'
 import copy from 'rollup-plugin-copy'
 
 export default {
-    input: 'src/L.Control.Heightgraph.js',
+    input: 'src/L.Control.Height.js',
     output: [
         {
-            file: 'dist/L.Control.Heightgraph.js',
+            file: 'dist/L.Control.Height.js',
             format: 'cjs'
         },
         {
-            file: 'dist/L.Control.Heightgraph.min.js',
+            file: 'dist/L.Control.Height.min.js',
             format: 'cjs',
             plugins: [terser()]
         }
@@ -47,8 +47,8 @@ export default {
             exclude: "node_modules/**" // only transpile our source code
         }),
         css({
-            raw: 'dist/L.Control.Heightgraph.css',
-            minified: 'dist/L.Control.Heightgraph.min.css'
+            raw: 'dist/L.Control.Height.css',
+            minified: 'dist/L.Control.Height.min.css'
         }),
         copy({
             targets: [

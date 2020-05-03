@@ -36,7 +36,7 @@ Alternatively you can add the required libraries in the head of your index.html 
  <script src="node_modules/leaflet/dist/leaflet.js"></script>
  <link rel="stylesheet" href="src/L.Control.Heightgraph.css"/>
  <script src="node_modules/d3/dist/d3.js"></script>
- <script type="text/javascript" src="src/L.Control.Heightgraph.js"></script>
+ <script type="text/javascript" src="src/L.Control.Height.js"></script>
 ```
 
 The latest version of d3 is not compatible with older browsers, you can try d3 v4 in this case.
